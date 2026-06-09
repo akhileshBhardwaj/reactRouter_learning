@@ -2,43 +2,55 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">MyWebsite</div>
+      <nav className="bg-slate-900 text-white px-8 py-4 flex justify-between items-center shadow-lg">
+        <h1 className="text-2xl font-bold">MyWebsite</h1>
 
-        <ul className="nav-links">
+        <ul className="flex gap-6 text-lg">
           <li>
-            <a href="/">Home</a>
+            <a href="#" className="hover:text-cyan-400 transition">
+              Home
+            </a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a href="#" className="hover:text-cyan-400 transition">
+              About
+            </a>
           </li>
           <li>
-            <a href="/">Services</a>
+            <a href="#" className="hover:text-cyan-400 transition">
+              Services
+            </a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#" className="hover:text-cyan-400 transition">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
 
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h1>Welcome To My Website</h1>
+      <main className="flex-1 bg-gradient-to-r from-blue-600 to-purple-700 flex items-center justify-center px-6">
+        <div className="text-center text-white max-w-3xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Welcome to My Website
+          </h1>
 
-          <p>
-            Build modern web applications with React.js. Fast, responsive and
-            user-friendly designs.
+          <p className="text-lg md:text-xl mb-8">
+            Build modern and responsive web applications using React.js and
+            Tailwind CSS. Fast, beautiful and user-friendly designs.
           </p>
 
-          <button>Get Started</button>
+          <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-slate-200 transition">
+            Get Started
+          </button>
         </div>
-      </section>
+      </main>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="bg-slate-900 text-white text-center py-4">
         <p>© 2026 MyWebsite. All Rights Reserved.</p>
       </footer>
     </div>
